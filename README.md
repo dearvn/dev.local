@@ -1,5 +1,13 @@
 # dev.local
 
+# Test upload S3 without install aws cli
+
+To check upload file to S3 using this script instead up install aws cli
+
+```
+upload-aws-s3.php
+```
+
 # Fix bug node-saas
 
 ```
