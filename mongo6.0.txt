@@ -57,6 +57,6 @@ mongoexport --db <database-name> --collection <collection-name> --out output.jso
 Import JSON File:
 
 ```
-mongoimport --db <database-name> --collection <collection-name> --file input.json
+mongoimport --db <database-name> --collection <collection-name> --authenticationDatabase admin --username user --password password --drop --file input.json
 ```
 
