@@ -33,3 +33,9 @@ Found bindings for the following environments:
 npm rebuild node-sass`
 
 ```
+
+No “Proceed Anyway” option on NET::ERR_CERT_INVALID in Chrome on MacOS
+copy and past in console tab
+```
+sendCommand(SecurityInterstitialCommandId.CMD_PROCEED)
+```
