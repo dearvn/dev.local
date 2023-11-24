@@ -1,0 +1,53 @@
+#odoo17
+
+## MacOS
+
+```
+brew install wkhtmltopdf 
+
+````
+
+# Active Virtual Env
+
+```
+pip3 install virtualenv
+
+
+virtualenv ./virtualenv --python=$(which python3)
+
+. ./virtualenv/bin/activate
+
+```
+
+## Postgre
+
+# Create db
+
+```
+psql postgres
+
+CREATE ROLE odoo17 WITH LOGIN PASSWORD '123456';
+
+ALTER ROLE odoo17 CREATEDB;
+
+\q
+
+psql postgres
+
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO odoo17;
+
+\q
+
+psql postgres -U odoo17
+
+
+
+```
+
+# Create module
+
+```
+
+python odoo-bin scaffold my_module new-addons
+
+```
