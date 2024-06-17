@@ -60,3 +60,14 @@ Import JSON File:
 mongoimport --db <database-name> --collection <collection-name> --authenticationDatabase admin --username user --password password --drop --file input.json
 ```
 
+
+```bash
+git clone https://github.com/mongodb/mongo-php-driver.git
+cd mongo-php-driver
+git submodule update --init
+phpize
+./configure --with-mongodb-ssl=darwin
+make all
+sudo make install
+```
+
